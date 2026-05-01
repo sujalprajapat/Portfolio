@@ -8,6 +8,10 @@ body {
 
 }
 
+::-webkit-scrollbar {
+    display: none;
+}
+
 /* HTML: <div class="ribbon">Your text content</div> */
 .ribbon {
 	font-size: 28px;
