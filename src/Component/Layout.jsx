@@ -36,7 +36,7 @@ function Layout() {
             icon: Github,
             label: "Github",
             onClick: () => {
-                window.location.href = "https://github.com/sujalprajapat49"
+                window.location.href = "https://github.com/sujalprajapat"
             },
         },
         {
