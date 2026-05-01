@@ -1,38 +1,259 @@
-.App {
-  text-align: center;
+/* HTML: <div class="ribbon">Your text content</div> */
+@import url('https://fonts.googleapis.com/css2?family=Epunda+Slab:ital,wght@0,300..900;1,300..900&display=swap');
+
+body {
+	/* background-color: #E3E0D8; */
+	background-color: #141414;
+	font-family: "Epunda Slab", serif;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* HTML: <div class="ribbon">Your text content</div> */
+.ribbon {
+	font-size: 28px;
+	font-weight: bold;
+	color: #fff;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* ribbon right to left  */
+.ribbon {
+	--r: .8em;
+	/* control the cutout */
+	border-block: .5em solid #0000;
+	padding-inline: .5em calc(var(--r) + .25em);
+	line-height: 1.8;
+	clip-path: polygon(100% 0, 0 0, 0 100%, 100% 100%, 100% calc(100% - .25em), calc(100% - var(--r)) 50%, 100% .25em);
+	background:
+		radial-gradient(.2em 50% at left, #000a, #0000) border-box,
+		#2F1E12 padding-box;
+	/* the color  */
+	width: fit-content;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
+/* ribbon left to right */
+
+.ribbon2 {
+	--r: .8em;
+	/* control the cutout */
+
+	border-block: .5em solid #0000;
+	padding-inline: calc(var(--r) + .25em) .5em;
+	line-height: 1.8;
+	clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 0 calc(100% - .25em), var(--r) 50%, 0 .25em);
+	background:
+		radial-gradient(.2em 50% at right, #000a, #0000) border-box,
+		#2F1E12 padding-box;
+	/* the color  */
+	width: fit-content;
 }
 
-.App-link {
-  color: #61dafb;
+.ribbon2 {
+	font-size: 28px;
+	font-weight: bold;
+	color: #fff;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+
+
+
+/* technologies section ribbon mobile device */
+.ribbon3 {
+	--r: .8em;
+	/* control the cutout */
+
+	border-inline: .0em solid #0000;
+	padding: .5em .2em calc(var(--r) + .2em);
+	clip-path: polygon(0 0, 100% 0, 100% 100%, calc(100% - .5em) calc(100% - var(--r)), 50% 100%, .5em calc(100% - var(--r)), 0 100%);
+	background:
+		radial-gradient(50% .2em at top, #000a, #0000) border-box,
+		#2F1E12 padding-box;
+	writing-mode: vertical-rl;
+	text-orientation: upright;
+	line-height: 0px;
+	letter-spacing: -4px;
+	min-width: 40px;
+	display: flex ;
+	align-items: center;
+	/* justify-content: center; */
 }
+
+
+
+/* header navigation ribbon css */
+.ribbon1 {
+	position: absolute;
+	top: 100%;
+	right: 30px;
+	text-align: center;
+	display: block;
+	width: 4rem;
+	height: 1rem;
+	padding-top: 0rem;
+	transition: .4s;
+	cursor: pointer;
+	z-index: 0;
+}
+
+.ribbon1:hover {
+	padding-top: 10rem;
+}
+
+
+.content {
+	/* color: #fff; */
+	font: 18px sans-serif;
+	writing-mode: vertical-rl;
+	text-orientation: upright;
+	position: relative;
+	/* z-index: 10; */
+	text-transform: uppercase;
+	transform: translateY(-100%);
+	/* margin-bottom: 20px; */
+	padding-bottom: 10px;
+	line-height: 12px;
+	letter-spacing: -2px;
+	transition: .8s;
+	visibility: hidden;
+	opacity: 0;
+}
+
+.ribbon1:hover .content {
+	visibility: visible;
+	opacity: 1;
+}
+
+.ribbon1:after {
+	content: "";
+	width: 100%;
+	top: 100%;
+	position: absolute;
+	display: block;
+	border-width: 0 2rem 2rem 2rem;
+	border-color: #A37A5F;
+	border-bottom-color: transparent;
+	border-style: solid;
+	box-sizing: border-box;
+}
+
+/* hero section text with picture css*/
+
+.text {
+	font-family: "Epunda Slab", serif;
+	font-weight: bolder;
+	line-height: 100%;
+	/* font-family: Cooperplate, fantasy; */
+	/* text-transform: uppercase; */
+	background: url('./Asset/text-bg.jpg');
+	background-size: cover;
+	background-position: 20% 30%;
+	-webkit-text-fill-color: transparent;
+	-webkit-background-clip: text;
+
+	-webkit-text-stroke: 0.1px black;
+	/* border width + color */
+}
+
+
+
+
+/* about button image shape css */
+.blob {
+	aspect-ratio: 1;
+	clip-path: shape(from 38.61% 9.39%, curve to 50.97% 7.67% with 44.34% 5.19%, curve to 64.16% 11.23% with 57.60% 10.15%, curve to 73.81% 18.52% with 70.72% 12.31%, curve to 84.60% 27.42% with 76.90% 24.74%, curve to 93.36% 37.24% with 92.29% 30.10%, curve to 91.00% 50.78% with 94.42% 44.39%, curve to 86.35% 63.24% with 87.58% 57.17%, curve to 81.19% 74.17% with 85.12% 69.31%, curve to 71.74% 81.75% with 77.26% 79.03%, curve to 60.55% 86.59% with 66.22% 84.46%, curve to 48.92% 87.86% with 54.89% 88.72%, curve to 35.59% 88.29% with 42.94% 87.01%, curve to 22.75% 85.16% with 28.24% 89.58%, curve to 14.22% 74.50% with 17.27% 80.74%, curve to 11.07% 61.60% with 11.18% 68.27%, curve to 7.42% 48.07% with 10.96% 54.93%, curve to 9.90% 36.24% with 3.87% 41.20%, curve to 20.01% 26.84% with 15.93% 31.27%, curve to 28.48% 18.01% with 24.10% 22.42%, curve to 38.61% 9.39% with 32.87% 13.60%);
+}
+
+/* about section nav button css */
+.sp_about .swiper-button-next,
+.sp_about .swiper-button-prev {
+	color: #2F1E12 !important;
+}
+
+
+
+
+/* about section button css */
+.sp_btn {
+	position: relative;
+}
+
+.sp_btn::after {
+	content: '';
+	position: absolute;
+	width: 0%;
+	height: 100%;
+	background-color: #2F1E12;
+	top: 0;
+	left: 0;
+	z-index: -1;
+	/* border-radius: 50%; */
+	visibility: hidden;
+	transition: 1s;
+}
+
+.sp_btn:hover::after {
+	/* border-radius: 0px; */
+	width: 100%;
+	visibility: visible;
+}
+
+
+@media (max-width:1024px) {
+	.line {
+		height: 60px;
+	}
+
+	.ribbon1 {
+		width: 3rem;
+
+	}
+
+	.ribbon1:after {
+		border-width: 0 1.5rem 1.5rem 1.5rem;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
