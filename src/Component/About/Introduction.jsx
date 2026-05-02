@@ -3,8 +3,8 @@ import img5 from '../../Asset/person5.jpg'
 function Introduction() {
     return (
         <div className='container   mx-auto overflow-hidden'>
-            <h1 className='xl:text-6xl md:text-5xl text-4xl font-bold uppercase text-center  text-brownLight sm:my-10 my-6'>My self</h1>
-            <div className='flex w-[80%] mx-auto overflow-hidden'>
+            <h1 data-aos="fade-up" className=' duration-200 transfrom-all xl:text-6xl md:text-5xl text-4xl font-bold uppercase text-center  text-brownLight sm:my-10 my-6'>My self</h1>
+            <div data-aos="fade-up" className=' duration-200 transfrom-all flex w-[80%] mx-auto overflow-hidden'>
                 <div className="flex group flex-col sm:flex-row">
                     <img
                         className="object-cover h-[500px] w-[500px] relative z-10"
@@ -18,7 +18,7 @@ function Introduction() {
                     </div>
                 </div>
             </div>
-            <div className='flex w-[80%] mx-auto overflow-hidden py-4'>
+            <div data-aos="fade-up" className=' duration-200 transfrom-all flex w-[80%] mx-auto overflow-hidden py-4'>
                 <div className="flex group flex-col-reverse sm:flex-row">
                     <div className=''>
                         <div className="bg-dark1 ms-auto text-brownMedium p-4 my-3 lg:w-[60%] shadow-xl transform transition-transform duration-500 -translate-y-full group-hover:translate-y-0 sm:translate-y-0 sm:translate-x-full sm:group-hover:translate-x-0  ">

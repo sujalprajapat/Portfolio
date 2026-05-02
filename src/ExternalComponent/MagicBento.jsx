@@ -583,7 +583,7 @@ const MagicBento = ({
             <BentoCardGrid gridRef={gridRef}>
                 <div className=" flex justify-center gap-2">
                     {cardData.map((card, index) => {
-                        const baseClassName = `card flex flex-col justify-between relative  min-h-[200px] 2xl:w-1/2 xl:w-[60%] md:w-[100%] sm:w-[80%]   border border-solid font-light overflow-hidden transition-colors duration-300 ease-in-out hover:-translate-y-0.5 hover:shadow-[0_8px_25px_rgba(0,0,0,0.15)] ${enableBorderGlow ? 'card--border-glow' : ''
+                        const baseClassName = ` duration-200 transfrom-all card flex flex-col justify-between relative  min-h-[200px] 2xl:w-1/2 xl:w-[60%] md:w-[100%] sm:w-[80%]   border border-solid font-light overflow-hidden transition-colors duration-300 ease-in-out hover:-translate-y-0.5 hover:shadow-[0_8px_25px_rgba(0,0,0,0.15)] ${enableBorderGlow ? 'card--border-glow' : ''
                             }`;
 
                         const cardStyle = {
@@ -598,6 +598,7 @@ const MagicBento = ({
 
                         return (
                             <ParticleCard
+                            data-aos="fade-up"
                                 key={index}
                                 className={baseClassName}
                                 style={cardStyle}
@@ -608,7 +609,7 @@ const MagicBento = ({
                                 clickEffect={clickEffect}
                                 enableMagnetism={enableMagnetism}
                             >
-                                <div className="flex gap-5   flex-col md:flex-row bg-dark1 md:h-[400px] md:p-8 p-6 shadow-lg">
+                                <div  className="  flex gap-5   flex-col md:flex-row bg-dark1 md:h-[400px] md:p-8 p-6 shadow-lg">
                                     <div className='h-full aspect-square bg-dark2'>
                                         <img src={card.img} alt={card.title} className='m-auto h-full'></img>
                                     </div>

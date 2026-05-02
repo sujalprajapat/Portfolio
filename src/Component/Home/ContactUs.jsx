@@ -112,7 +112,7 @@ function ContactUs() {
 
     return (
         <section className="md:py-16 py-4">
-            <div className="ribbon">
+            <div data-aos="fade-up" className="ribbon duration-200 transfrom-all">
                 <div className=" capitalize text-brownLight pe-5 xl:text-5xl md:text-4xl text-2xl flex items-center h-full">
                     <p> contact me</p>
                 </div>
@@ -120,7 +120,7 @@ function ContactUs() {
             <div className=" m-auto">
                 <div className='flex md:p-8 p-3 flex-col-reverse lg:flex-row'>
                     <div className='lg:w-1/2 mt-8 md:mt-0'>
-                        <div className="text xl:text-[120px] sm:text-[80px] text-[70px] text-center md:text-start">
+                        <div data-aos="fade-up" className="duration-200 transfrom-all text xl:text-[120px] sm:text-[80px] text-[70px] text-center md:text-start">
                             <h1>
                                 Sujal
                             </h1>
@@ -128,8 +128,8 @@ function ContactUs() {
                                 Prajapat
                             </h1>
                         </div>
-                        <p className="xl:text-md text-sm  mt-3 text-brownMedium text-center md:text-start">A passionate <u><b> Full stack web Developer</b> </u> with a strong focus on building clean, user-friendly, and efficient web applications. I enjoy solving problems through code and continuously improving my skills to stay updated with modern technologies.</p>
-                        <ul className='flex  flex-wrap  sm:gap-3 py-5 gap-3'>
+                        <p data-aos="fade-up" className="duration-200 transfrom-all xl:text-md text-sm  mt-3 text-brownMedium text-center md:text-start">A passionate <u><b> Full stack web Developer</b> </u> with a strong focus on building clean, user-friendly, and efficient web applications. I enjoy solving problems through code and continuously improving my skills to stay updated with modern technologies.</p>
+                        <ul data-aos="fade-up" className=' duration-200 transfrom-all flex  flex-wrap  sm:gap-3 py-5 gap-3'>
                             {dockItems.map(item => (
                                 <li className='flex  p-4 bg-dark1 rounded-[20px]  w-fit  cursor-pointer hover:bg-brownDark text-light' onClick={item.onClick}>
                                     <img src={item.icon} alt={item.label} className='h-5 w-5 bg-light rounded-full'></img>
@@ -138,7 +138,7 @@ function ContactUs() {
                             ))}
                         </ul>
                     </div>
-                    <div className='lg:w-1/2 h-auto bg-dark1 md:p-8 p-4'>
+                    <div data-aos="fade-up" className=' duration-200 transfrom-all  lg:w-1/2 h-auto bg-dark1 md:p-8 p-4'>
                         <Formik initialValues={initialValues}
                             validationSchema={validationSchema}
                             onSubmit={handleSubmit}>

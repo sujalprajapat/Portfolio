@@ -94,7 +94,7 @@ function HeroSection() {
   const heroRef = useRef(null);
 
   return (
-    <div className="flex  md:flex-row items-center justify-between w-[90%] m-auto gap-8 flex-col-reverse pb-10 md:pb-0">
+    <div data-aos="fade-up" className="  duration-200 transfrom-all flex  md:flex-row items-center justify-between w-[90%] m-auto gap-8 flex-col-reverse pb-10 md:pb-0">
       <div className="md:w-[50%] w-full md:pe-10  flex flex-col justify-center h-full">
         <p className="xl:text-md text-sm  text-brownMedium text-center md:text-start">
           <ReactTyped

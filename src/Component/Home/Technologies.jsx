@@ -51,9 +51,9 @@ function Technologies() {
   return (
     <div className='md:py-16 py-0'>
       <div className='md:py-16 py-8   mx-auto relative'>
-        <h1 data-aos="fade-up" className='xl:text-6xl md:text-5xl text-4xl font-bold uppercase text-center  text-brownLight  relative z-10 pb-10 md:pb-0'>Things I Know</h1>
+        <h1 data-aos="fade-up" className=' duration-200 transfrom-all xl:text-6xl md:text-5xl text-4xl font-bold uppercase text-center  text-brownLight  relative z-10 pb-10 md:pb-0'>Things I Know</h1>
         {/* for dive greater than 768 */}
-        <div className='md:flex hidden justify-between overflow-hidden relative z-10'>
+        <div data-aos="fade-up" className=' duration-200 transfrom-all  md:flex hidden justify-between overflow-hidden relative z-10'>
           <div className='flex flex-col'>
             <div className={` ${selectedTech?.id === 1 ? '!bg-light' : ''}  ribbon !text-xl hover:bg-light hover:text-brownDark cursor-pointer`} onMouseEnter={() => { selected(1) }}>
               <div className="capitalize text-brownMedium pe-5 w-32 h-[50px] flex items-center " ><p>HTML</p></div>
@@ -156,7 +156,7 @@ function Technologies() {
         </div>
 
         {/* for dive smaller than 768 */}
-        <div className='md:hidden '>
+        <div data-aos="fade-up" className='md:hidden  duration-200 transfrom-all '>
           <div className='flex gap-3 p-3 overflow-auto '>
             <div className={` ${selectedTech?.id === 1 ? ' bg-light' : ''} ribbon3 !text-sm hover:bg-light hover:text-brownDark cursor-pointer`} onMouseEnter={() => { selected(1) }} onClick={() => { selected(1) }}>
               <div className="capitalize text-brownMedium   " ><p>HTML</p></div>

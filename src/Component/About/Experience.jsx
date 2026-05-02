@@ -25,7 +25,7 @@ function Experience() {
     ];
     return (
         <div className='container  mb-10 mx-auto  relative md:p-16 xs:p-8 p-6'>
-            <h1 className='xl:text-6xl md:text-5xl text-4xl font-bold uppercase text-center  text-brownLight sm:my-10 my-6'>Experience</h1>
+            <h1 data-aos="fade-up" className='  duration-200 transfrom-all xl:text-6xl md:text-5xl text-4xl font-bold uppercase text-center  text-brownLight sm:my-10 my-6'>Experience</h1>
             <MagicBento
                 textAutoHide={true}
                 enableStars

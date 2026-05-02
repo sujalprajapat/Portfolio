@@ -30,10 +30,10 @@ const Project = () => {
         <div>
             {slideData?.map((item) => {
                 return (
-                    <div className='w-full h-[100vh] p-10 relative'>
+                    <div data-aos="fade-up" className='w-full h-[100vh] p-10 relative duration-200 transfrom-all'>
                         <iframe
                             title='website preview'
-                            className="w-full h-full  cursor-none"
+                            className="w-full h-full  cursor-none   "
                             src={item.link}
                             loading="lazy"
                         // sandbox="allow-scripts allow-same-origin allow-popups"

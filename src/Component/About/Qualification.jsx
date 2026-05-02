@@ -6,10 +6,10 @@ import { InteractiveCard } from '../../ExternalComponent/Interactive-card'
 function Qualification() {
     return (
         <div className='container  mb-10 mx-auto  relative md:p-16 xs:p-8 p-6'>
-            <h1 className='xl:text-6xl md:text-5xl text-4xl font-bold uppercase text-center  text-brownLight sm:my-10 my-6'>Education journey</h1>
+            <h1 data-aos="fade-up" className='  duration-200 transfrom-all xl:text-6xl md:text-5xl text-4xl font-bold uppercase text-center  text-brownLight sm:my-10 my-6'>Education journey</h1>
             <div>
-                <img src={arrow1} alt='' className='h-[250px] aspect-video object-cover rotate-[-180deg] m-auto hidden md:block'/>
-                <div >
+                <img  src={arrow1} alt='' className='  h-[250px] aspect-video object-cover rotate-[-180deg] m-auto hidden md:block'/>
+                <div data-aos="fade-up" className=' duration-200 transfrom-all '>
                     <InteractiveCard
                         InteractiveColor=""
                         tailwindBgClass=""
@@ -41,8 +41,8 @@ function Qualification() {
                 </div>
 
 
-                <img src={arrow1} alt='' className='h-[250px] aspect-video object-cover [transform:rotateX(180deg)_rotateY(0deg)_rotate(-35deg)] hidden md:block'></img>
-                <div className='flex justify-center'>
+                <img  src={arrow1} alt='' className='  h-[250px] aspect-video object-cover [transform:rotateX(180deg)_rotateY(0deg)_rotate(-35deg)] hidden md:block'></img>
+                <div data-aos="fade-up" className=' duration-200 transfrom-all flex justify-center'>
                     <InteractiveCard
                         InteractiveColor=""
                         tailwindBgClass=""
@@ -59,7 +59,7 @@ function Qualification() {
                             className=" p-4  my-10   "
                         >
                             <div className='items-center gap-3 md:flex'>
-                                <img src={arihant} alt="arihant academy" className='m-auto mb-4 h-[200px] aspect-square rounded-lg'></img>
+                                <img src={arihant} alt="arihant academy" className=' m-auto mb-4 h-[200px] aspect-square rounded-lg'></img>
                                 <div className='text-[#A37A5F]'>
                                     <b className='text-lg'>Higher Secondary Certificate (HSC)</b>
                                     <ul className='text-sm'>
@@ -74,8 +74,8 @@ function Qualification() {
                 </div>
 
 
-                <img src={arrow1} alt='' className='h-[250px] aspect-video object-cover [transform:rotateX(180deg)_rotateY(180deg)_rotate(-35deg)] ms-auto hidden md:block'></img>
-                <div className='flex justify-center'>
+                <img src={arrow1} alt='' className=' h-[250px] aspect-video object-cover [transform:rotateX(180deg)_rotateY(180deg)_rotate(-35deg)] ms-auto hidden md:block'></img>
+                <div data-aos="fade-up" className=' duration-200 transfrom-all flex justify-center'>
                     <InteractiveCard
                         InteractiveColor=""
                         tailwindBgClass=""
@@ -107,7 +107,7 @@ function Qualification() {
                 </div>
 
 
-                <div className="text text-[180px]  2xl:right-28 right-10 absolute top-[20%] [writing-mode:vertical-rl] z-[-1] opacity-80 hidden md:block" >
+                <div data-aos="fade-up" className="  duration-200 transfrom-all text text-[180px]  2xl:right-28 right-10 absolute top-[20%] [writing-mode:vertical-rl] z-[-1] opacity-80 hidden md:block" >
                     Sujal
                     Prajapat
                 </div>

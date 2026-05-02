@@ -4,13 +4,13 @@ import { useNavigate } from 'react-router-dom';
 import 'swiper/css';
 import 'swiper/css/effect-fade';
 import 'swiper/css/navigation';
-import img6 from '../../Asset/person6.jpg'
+import img6 from '../../Asset/person5.jpg'
 function AboutSection() {
   const navigate = useNavigate()
   return (
     <div className='container sp_about mb-10 mx-auto'>
-      <h1 data-aos="fade-up" className='xl:text-6xl md:text-5xl text-4xl font-bold uppercase text-center  text-brownLight sm:my-10 my-6'>my self</h1>
-      <div className='w-full m-auto md:px-12 px-4'>
+      <h1 data-aos="fade-up" className='xl:text-6xl md:text-5xl text-4xl font-bold uppercase text-center duration-200 transfrom-all  text-brownLight sm:my-10 my-6'>my self</h1>
+      <div data-aos="fade-up" className='w-full m-auto md:px-12 px-4  duration-200 transfrom-all '>
         <Swiper
           spaceBetween={30}
           effect={'fade'}
