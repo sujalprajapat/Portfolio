@@ -97,7 +97,7 @@ body {
 	padding-top: 0rem;
 	transition: .4s;
 	cursor: pointer;
-	z-index: 0;
+	z-index: 99;
 }
 
 .ribbon1:hover {
@@ -118,7 +118,6 @@ body {
 	padding-bottom: 10px;
 	line-height: 12px;
 	letter-spacing: -2px;
-	transition: .8s;
 	visibility: hidden;
 	opacity: 0;
 }
@@ -126,6 +125,8 @@ body {
 .ribbon1:hover .content {
 	visibility: visible;
 	opacity: 1;
+		transition: 1.8s;
+
 }
 
 .ribbon1:after {
@@ -139,6 +140,7 @@ body {
 	border-bottom-color: transparent;
 	border-style: solid;
 	box-sizing: border-box;
+
 }
 
 /* hero section text with picture css*/

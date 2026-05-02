@@ -4,7 +4,7 @@ import gsap from "gsap"
 import { ScrollTrigger } from "gsap/ScrollTrigger"
 import { Canvas, useFrame, useThree } from "@react-three/fiber";
 import { useGLTF } from "@react-three/drei";
-import developer from '../../Asset/developer.glb'
+// import developer from '../../Asset/developer.glb'
 
 function Model({ url, sectionRef, ...props }) {
   const modelRef = useRef();
@@ -140,7 +140,7 @@ function HeroSection() {
           <ambientLight intensity={2} />
           <directionalLight position={[5, 5, 5]} />
           <Suspense fallback={null}>
-            <Model url={developer} sectionRef={heroRef} />
+            <Model url='/developer.glb' sectionRef={heroRef} />
           </Suspense>
         </Canvas>
       </div>

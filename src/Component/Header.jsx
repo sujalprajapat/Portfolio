@@ -68,7 +68,7 @@ function Header() {
           ))}
         </div>
       </div>
-      <div className="ribbon1 lg:me-40 me-[120px] bg-brownMedium" onClick={() => navigate('project')}>
+      <div className="ribbon1 lg:me-40 me-[120px] bg-brownMedium " onClick={() => navigate('project')}>
         <span className="content text-light">project</span>
       </div>
       <div className="ribbon1 lg:me-20  me-[60px] bg-brownMedium" onClick={() => navigate('about')}>
@@ -80,13 +80,12 @@ function Header() {
       <Wave
         fill="#000"
         paused={false}
-        className="absoulte top-0 left-0"
-        style={{ display: "flex", transform: "rotate(180deg)", position: 'absolute', top: "100%", height: "30px", zIndex: "0" }}
+        className="absoulte top-0 left-0 h-[20px]"
+        style={{ display: "flex", transform: "rotate(180deg)", position: 'absolute', top: "100%", zIndex: "0" }}
         options={{
-          height: 20,
           amplitude: 20,
           speed: 0.15,
-          points: 3,
+          points: 5,
         }}
       />
     </div>
