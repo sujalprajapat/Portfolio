@@ -96,7 +96,7 @@ function HeroSection() {
   return (
     <div data-aos="fade-up" className="  duration-200 transfrom-all flex  md:flex-row items-center justify-between w-[90%] m-auto gap-8 flex-col-reverse pb-10 md:pb-0">
       <div className="md:w-[50%] w-full md:pe-10  flex flex-col justify-center h-full">
-        <p className="xl:text-md text-sm  text-brownMedium text-center md:text-start">
+        <p className="xl:text-base text-md  text-brownMedium text-center md:text-start">
           <ReactTyped
             strings={["Hi, I’m"]}
             typeSpeed={70}
@@ -124,7 +124,7 @@ function HeroSection() {
           </h1>
         </div>
 
-        <p className="xl:text-md text-sm  mt-3 text-brownMedium text-center md:text-start">
+        <p className="xl:text-base text-md mt-3 text-brownMedium text-center md:text-start">
           <ReactTyped
             strings={[
               "A passionate <u><b> Full stack web Developer</b> </u> with a strong focus on building clean, user-friendly, and efficient web applications. I enjoy solving problems through code and continuously improving my skills to stay updated with modern technologies.",
